@@ -7,7 +7,6 @@
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="<%= asset_path 'application.css' %>">
-    <script src="<%= asset_path 'application.js' %>"></script>
 
   </head>
   <body>
@@ -16,5 +15,24 @@
         <div id="container"></div>
       </div>
     </div>
+
+    <script type="text-template" id="signup">
+      <br><br><br>
+      <div class="three column stackable ui grid">
+        <div class="two column"></div>
+        <div class="five column">
+          <div class="ui form segment">
+            <h1>Sign Up</h1>
+            <a href="/auth/github" class="ui fluid large github black button">
+              <i class="github sign icon"></i>Github
+            </a>
+          </div>
+        </div>
+        <div class="two column"></div>
+      </div>
+    </script>
+
+    <script src="<%= asset_path 'application.js' %>"></script>
+
   </body>
 </html>
