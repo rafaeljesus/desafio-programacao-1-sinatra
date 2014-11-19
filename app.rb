@@ -21,9 +21,9 @@ libraries.each do |path_name|
   require path_name
 end
 
-require 'app/extensions'
 require 'app/models'
 require 'app/helpers'
+require 'app/extensions'
 require 'app/routes'
 
 module App
@@ -41,6 +41,7 @@ module App
     configure do
       disable :method_override
       disable :static
+      enable  :raise_errors
 
       set :erb, escape_html: true
 
@@ -59,6 +60,7 @@ module App
     use Routes::Assets unless settings.production?
     use Routes::Index
     use Routes::Users
+    # use Routes::CurrentUser
   end
 end
 

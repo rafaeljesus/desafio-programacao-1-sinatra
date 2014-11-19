@@ -10,7 +10,6 @@ module App
         user.save
         user
       end
-
     end
   end
 end

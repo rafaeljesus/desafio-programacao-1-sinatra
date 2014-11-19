@@ -12,6 +12,8 @@ gem 'rake'
 gem 'builder'
 gem 'json', '~> 1.7.7'
 gem 'dotenv'
+gem 'omniauth-github'
+gem 'pry'
 
 # Assets
 gem 'sprockets'

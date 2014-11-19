@@ -6,7 +6,6 @@ var App = new (Backbone.View.extend({
   Routers: {},
 
   init: function() {
-
     var currentUser = new App.Models.CurrentUser();
     if (!currentUser.signedIn()) {
       currentUser.fetch()

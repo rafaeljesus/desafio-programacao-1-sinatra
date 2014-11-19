@@ -11,13 +11,11 @@ module App
         set :erb, escape_html: true
 
         enable :use_code
+        set :show_exceptions, :after_handler
       end
 
       register Extensions::Assets
       register Extensions::Auth
-
-      helpers Helpers
-      helpers Sinatra::ContentFor
     end
   end
 end
